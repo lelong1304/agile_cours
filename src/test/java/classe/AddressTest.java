@@ -58,7 +58,6 @@ public class AddressTest
         Address address = new Address();
         address.setAddress(addressString);
         address.setPostcode(code);
-        System.out.println(address.getAddress());
         assertEquals(address.getAddress(), addressString);
         assertEquals(address.getPostcode(), code);
         assertEquals(address.getAddress(), addressParis.getAddress());

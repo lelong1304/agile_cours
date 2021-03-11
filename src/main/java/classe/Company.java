@@ -26,7 +26,6 @@ public class Company
     
     public Company(float capital, float price)
     {
-        // initialise instance variables
         this.capital = capital;
         this.stockPrice = price;
         this.address = null;
@@ -34,27 +33,18 @@ public class Company
     
     public Company(float capital, float price, Address address)
     {
-        // initialise instance variables
         this.capital = capital;
         this.stockPrice = price;
         this.address = address;
     }   
 
-    /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
-     */
-    
+
     public void setCapital(float amount)
     {
-        // put your code here
         this.capital = amount;
     }
     public void setStockPrice(float amount)
     {
-        // put your code here
         this.stockPrice = amount;
     }
     
