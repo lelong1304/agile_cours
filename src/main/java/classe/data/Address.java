@@ -1,4 +1,4 @@
-package classe;
+package classe.data;
 
 /**
  * Write a description of class Address here.
