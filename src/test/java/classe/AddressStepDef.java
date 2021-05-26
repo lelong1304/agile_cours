@@ -28,4 +28,15 @@ public class AddressStepDef {
         assertEquals(address.getAddress(), addressStr);
     }
 
+    @When("I set its postcode to {int}")
+    public void i_set_its_postcode_to(int value) throws PendingException {
+        // Write code here that turns the phrase above into concrete actions
+        address.setPostcode(value);
+    }
+
+    @Then("the object has postcode value {int}")
+    public void the_object_has_postcode_value(int value) throws PendingException {
+        // Write code here that turns the phrase above into concrete actions
+        assertEquals(address.getPostcode(), value);
+    }
 }

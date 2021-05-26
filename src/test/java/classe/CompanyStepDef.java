@@ -68,5 +68,18 @@ public class CompanyStepDef {
         assertEquals(company.getAddress().getPostcode(), address.getPostcode());
     }
 
+    @Given("I have a Company whose capital is {float}")
+    public void i_have_a_Company_whose_capital_is(float value) throws PendingException {
+        // Write code here that turns the phrase above into concrete actions
+        company = new Company();
+        company.setCapital(100);
+    }
+
+    @Then("I should get the value of {float}")
+    public void i_should_get_the_value_of(float value) throws PendingException {
+        // Write code here that turns the phrase above into concrete actions
+        assertEquals(company.getCapital(), value);
+    }
+
 
 }
