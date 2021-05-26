@@ -1,17 +1,22 @@
-package classe;
+package classe.data;
 
-/**
- * Write a description of class Company here.
- *
- * @author (your name)
- * @version (a version number or a date)
- */
+import classe.behavior.Observer;
+import lombok.Getter;
+import lombok.Setter;
+
+import java.util.ArrayList;
+import java.util.List;
+
+@Getter
+@Setter
 public class Company
 {
     // instance variables - replace the example below with your own
+    private String name;
     private float capital;
     private float stockPrice;
     private Address address;
+    private float revenue;
 
     /**
      * Constructor for objects of class Company
@@ -23,6 +28,16 @@ public class Company
         this.stockPrice = 0;
         this.address = null;
     }
+    public Company(String name)
+    {
+        // initialise instance variables
+        this.name = name;
+        this.capital = 0;
+        this.stockPrice = 0;
+        this.address = null;
+        this.revenue = 0;
+    }
+
     
     public Company(float capital, float price)
     {

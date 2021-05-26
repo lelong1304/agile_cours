@@ -1,5 +1,7 @@
 package classe;
 import static org.junit.jupiter.api.Assertions.*;
+
+import classe.data.Address;
 import cucumber.api.PendingException;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
