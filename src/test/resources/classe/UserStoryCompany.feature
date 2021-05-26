@@ -19,3 +19,7 @@ Feature:
     Examples:
       | addressStr | postcodeValue |
       | "Paris"    | 75000         |
+
+  Scenario: Get Capital for Company
+    Given I have a Company whose capital is 100.0
+    Then I should get the value of 100.0
