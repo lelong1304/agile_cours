@@ -6,6 +6,7 @@ public class PaypalStrategy implements PaiementStrategy {
 
     private String id;
     private String password;
+    private float amount;
 
     public PaypalStrategy(String email, String pass){
         this.id=id;
@@ -13,8 +14,9 @@ public class PaypalStrategy implements PaiementStrategy {
     }
 
     @Override
-    public void pay(float amount) {
+    public float pay(float amount) {
         System.out.println(amount + "€ payés par Paypal.");
+        return amount;
 
     }
 

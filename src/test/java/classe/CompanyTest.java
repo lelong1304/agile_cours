@@ -111,5 +111,14 @@ public class CompanyTest
     		assertTrue(company.getAddress().equals(addressParis));
     	}
     }
-    
+
+    @Test
+    public void testSuite() {
+        testGetter();
+        testListCompany();
+        testRobustesse();
+        testEqualsImplementation();
+        testScaleCapital();
+        testScaleStock();
+    }
 }

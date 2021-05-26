@@ -1,5 +1,5 @@
 package classe.behavior;
 
 public interface PaiementStrategy {
-    public void pay(float amount);
+    public float pay(float amount);
 }

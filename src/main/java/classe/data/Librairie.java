@@ -7,7 +7,6 @@ import lombok.Setter;
 
 import java.util.ArrayList;
 @NoArgsConstructor
-@AllArgsConstructor
 @Getter
 @Setter
 public class Librairie {
@@ -17,5 +16,9 @@ public class Librairie {
 	public Librairie(String bookstore) {
 		this.librairieName = bookstore;
 
+	}
+
+	public void addLivre(Livre livre) {
+		livreList.add(livre);
 	}
 }
