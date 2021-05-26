@@ -25,8 +25,6 @@ public class DemoApplication {
 		livre2.pay(new CardStrategy( "1234567890123456", "786", "12/15"));
 		livre3.pay(new PaypalStrategy("idExemple", "passwordExemple"));
 
-
-
 	}
 
 }
