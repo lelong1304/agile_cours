@@ -2,7 +2,6 @@ package classe;
 
 import classe.behavior.impl.PaypalStrategy;
 import classe.behavior.impl.SellingObserver;
-import classe.data.Address;
 import classe.data.Company;
 import classe.data.Livre;
 import org.junit.jupiter.api.AfterEach;
@@ -67,7 +66,7 @@ public class SellingObserverTest
         livre.attach(seller);
         livre.pay(payment);
         delta = company.getRevenue() - revenueBefore;
-        assertEquals(livre.getPrixLivre(), delta, 0.1);
+        assertEquals(livre.getPrice(), delta, 0.1);
     }
 
     
