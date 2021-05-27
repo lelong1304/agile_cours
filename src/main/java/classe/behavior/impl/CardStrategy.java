@@ -3,13 +3,13 @@ package classe.behavior.impl;
 import classe.behavior.PaiementStrategy;
 
 public class CardStrategy implements PaiementStrategy {
-    private String numeroCarte;
-    private String cryptogramme;
+    private String numberCard;
+    private String cryptogram;
     private String dateExpiration;
 
     public CardStrategy(String num, String crypto, String date) {
-        this.numeroCarte = num;
-        this.cryptogramme = crypto;
+        this.numberCard = num;
+        this.cryptogram = crypto;
         this.dateExpiration = date;
     }
 

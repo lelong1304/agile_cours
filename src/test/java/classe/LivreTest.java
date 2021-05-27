@@ -2,7 +2,6 @@ package classe;
 
 import classe.behavior.Observer;
 import classe.behavior.impl.SellingObserver;
-import classe.data.Address;
 import classe.data.Company;
 import classe.data.Livre;
 import org.junit.jupiter.api.AfterEach;
@@ -68,7 +67,7 @@ public class LivreTest
     public void testGetter()
     {
         assertEquals("Livre A", livre.getName());
-        assertEquals(25, livre.getPrixLivre());
+        assertEquals(25, livre.getPrice());
     }
 
     @Test
@@ -76,8 +75,8 @@ public class LivreTest
     {
         livre.setName("Livre B");
         assertEquals("Livre B", livre.getName());
-        livre.setPrixLivre(30);
-        assertEquals(30, livre.getPrixLivre());
+        livre.setPrice(30);
+        assertEquals(30, livre.getPrice());
     }
 
     

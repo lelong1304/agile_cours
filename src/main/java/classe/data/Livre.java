@@ -17,14 +17,14 @@ import java.util.List;
 public class Livre
 {
     private String name;
-    private float prixLivre;
+    private float price;
     private List<Observer> observers = new ArrayList<>();
-    public Livre(String name, float prixLivre) {
+    public Livre(String name, float price) {
         this.name = name;
-        this.prixLivre = prixLivre;
+        this.price = price;
     }
     public void pay(PaiementStrategy methode){
-        float amount = this.getPrixLivre();
+        float amount = this.getPrice();
         methode.pay(amount);
         notifyUpdate();
     }

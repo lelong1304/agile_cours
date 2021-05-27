@@ -35,7 +35,7 @@ public class SellingBookStepDef {
 	}
 	@Then(": The <revenue> of <Company> is updated by selling the book")
 	public void the_revenue_of_company_is_updated_by_selling_the_book() {
-		assertEquals(company.getRevenue(),revenueInitiale+livre1.getPrixLivre());
+		assertEquals(company.getRevenue(),revenueInitiale+livre1.getPrice());
 	}
 
 }

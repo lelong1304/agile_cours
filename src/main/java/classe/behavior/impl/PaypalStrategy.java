@@ -18,5 +18,4 @@ public class PaypalStrategy implements PaiementStrategy {
         return amount;
 
     }
-
 }

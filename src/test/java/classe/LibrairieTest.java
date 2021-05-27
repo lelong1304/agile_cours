@@ -1,8 +1,5 @@
 package classe;
 
-import classe.behavior.PaiementStrategy;
-import classe.behavior.impl.CardStrategy;
-import classe.behavior.impl.PaypalStrategy;
 import classe.data.Librairie;
 import classe.data.Livre;
 import org.junit.jupiter.api.AfterEach;
@@ -61,7 +58,7 @@ public class LibrairieTest
         Livre newlyAddedLivre = lib.getLivreList().get(n-1);
         assertEquals(1, n);
         assertEquals(l.getName(), newlyAddedLivre.getName());
-        assertEquals(l.getPrixLivre(), newlyAddedLivre.getPrixLivre());
+        assertEquals(l.getPrice(), newlyAddedLivre.getPrice());
     }
 
     
