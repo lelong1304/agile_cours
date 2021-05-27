@@ -6,9 +6,9 @@ import classe.behavior.impl.PaypalStrategy;
 import classe.behavior.impl.SellingObserver;
 import classe.data.Company;
 import classe.data.Livre;
-import io.cucumber.java.en.Given;
-import io.cucumber.java.en.Then;
-import io.cucumber.java.en.When;
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
 
 
 public class SellingBookStepDef {
