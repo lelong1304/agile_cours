@@ -12,7 +12,7 @@ import cucumber.api.java.en.When;
 public class CompanyStepDef {
     Company company;
     Address address;
-/*
+
     @Given("I have a Company")
     public void i_have_a_company() throws PendingException{
         company = new Company();
@@ -28,7 +28,7 @@ public class CompanyStepDef {
         assertEquals(company.getCapital(),val);
         //throw new PendingException();
     }
-*/
+
     @Given("I have an existing company with {float}")
     public void i_have_an_existing_company_with(Float val) throws PendingException {
         company = new Company();

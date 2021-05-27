@@ -6,7 +6,6 @@ public class PaypalStrategy implements PaiementStrategy {
 
     private String id;
     private String password;
-    private float amount;
 
     public PaypalStrategy(String email, String pass){
         this.id=id;

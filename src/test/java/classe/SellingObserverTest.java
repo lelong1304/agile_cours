@@ -12,7 +12,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 /**
- * The test class CompanyTest.
+ * The testAddLivre class CompanyTest.
  *
  * @author  (your name)
  * @version (a version number or a date)
@@ -20,7 +20,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class SellingObserverTest
 {
     /**
-     * Default constructor for test class CompanyTest
+     * Default constructor for testAddLivre class CompanyTest
      */
 
     protected Company company;
@@ -34,9 +34,9 @@ public class SellingObserverTest
     }
 
     /**
-     * Sets up the test fixture.
+     * Sets up the testAddLivre fixture.
      *
-     * Called before every test case method.
+     * Called before every testAddLivre case method.
      */
     @BeforeEach
     public void setUp()
@@ -49,9 +49,9 @@ public class SellingObserverTest
     }
 
     /**
-     * Tears down the test fixture.
+     * Tears down the testAddLivre fixture.
      *
-     * Called after every test case method.
+     * Called after every testAddLivre case method.
      */
     @AfterEach
     public void tearDown()

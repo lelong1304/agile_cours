@@ -12,7 +12,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 /**
- * The test class CompanyTest.
+ * The testAddLivre class CompanyTest.
  *
  * @author  (your name)
  * @version (a version number or a date)
@@ -20,7 +20,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class LibrairieTest
 {
     /**
-     * Default constructor for test class CompanyTest
+     * Default constructor for testAddLivre class CompanyTest
      */
 
     protected Librairie lib;
@@ -31,9 +31,9 @@ public class LibrairieTest
     }
 
     /**
-     * Sets up the test fixture.
+     * Sets up the testAddLivre fixture.
      *
-     * Called before every test case method.
+     * Called before every testAddLivre case method.
      */
     @BeforeEach
     public void setUp()
@@ -42,9 +42,9 @@ public class LibrairieTest
     }
 
     /**
-     * Tears down the test fixture.
+     * Tears down the testAddLivre fixture.
      *
-     * Called after every test case method.
+     * Called after every testAddLivre case method.
      */
     @AfterEach
     public void tearDown()
@@ -53,7 +53,7 @@ public class LibrairieTest
     }
     
     @Test
-    public void test()
+    public void testAddLivre()
     {
         Livre l = new Livre("A", 10);
         lib.addLivre(l);

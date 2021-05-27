@@ -12,6 +12,6 @@ public class SellingObserver extends Observer {
     public void update(Livre livre) {
         this.company.setRevenue(this.company.getRevenue() + livre.getPrixLivre());
 
-        System.out.println("Compagnie "+ company.getName() + " a vendu la livre "+ livre.getName() +" la revenue totale est "+ this.company.getRevenue());
+        System.out.println("Compagnie "+ company.getName() + " a vendu la livre "+ livre.getName() +" au prix " + livre.getPrixLivre() + ". La revenue totale est "+ this.company.getRevenue());
     }
 }

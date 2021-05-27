@@ -12,7 +12,7 @@ import classe.data.Address;
 import classe.data.Company;
 
 /**
- * The test class CompanyTest.
+ * The testAddLivre class CompanyTest.
  *
  * @author  (your name)
  * @version (a version number or a date)
@@ -20,7 +20,7 @@ import classe.data.Company;
 public class CompanyTest
 {
     /**
-     * Default constructor for test class CompanyTest
+     * Default constructor for testAddLivre class CompanyTest
      */
     
     protected Company total;
@@ -112,13 +112,4 @@ public class CompanyTest
     	}
     }
 
-    @Test
-    public void testSuite() {
-        testGetter();
-        testListCompany();
-        testRobustesse();
-        testEqualsImplementation();
-        testScaleCapital();
-        testScaleStock();
-    }
 }
