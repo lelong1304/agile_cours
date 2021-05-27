@@ -53,26 +53,6 @@ public class Company
         this.address = address;
     }   
 
-
-    public void setCapital(float amount)
-    {
-        this.capital = amount;
-    }
-    public void setStockPrice(float amount)
-    {
-        this.stockPrice = amount;
-    }
-    
-    public float getCapital()
-    {
-        return this.capital;
-    }
-    
-    public float getStockPrice()
-    {
-        return this.stockPrice;
-    }
-    
     public void scaleCapital(float amount)// we rename to addCapital, it's more generic
     {
         this.capital += amount;
@@ -82,16 +62,6 @@ public class Company
     {
         return this.stockPrice += amount;
     }
-    
-    public void setAddress(Address address)
-    {
-        this.address = address;
-    }
-    public Address getAddress()
-    {
-        return this.address;
-    }
-    
 
 	@Override
 	public boolean equals(Object obj) {
