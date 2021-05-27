@@ -14,7 +14,8 @@ public class CardStrategy implements PaiementStrategy {
     }
 
     @Override
-    public void pay(float amount) {
+    public float pay(float amount) {
         System.out.println(amount + "€ payés par carte de crédit.");
+        return amount;
     }
 }

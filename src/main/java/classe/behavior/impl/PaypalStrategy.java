@@ -13,8 +13,9 @@ public class PaypalStrategy implements PaiementStrategy {
     }
 
     @Override
-    public void pay(float amount) {
+    public float pay(float amount) {
         System.out.println(amount + "€ payés par Paypal.");
+        return amount;
 
     }
 

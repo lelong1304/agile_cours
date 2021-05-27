@@ -1,11 +1,15 @@
 package classe;
 
-import static org.junit.jupiter.api.Assertions.*;
+import classe.behavior.PaiementStrategy;
+import classe.behavior.impl.CardStrategy;
+import classe.behavior.impl.PaypalStrategy;
+import classe.data.Librairie;
+import classe.data.Livre;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import classe.data.Address;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 /**
  * The testAddLivre class CompanyTest.
@@ -13,15 +17,15 @@ import classe.data.Address;
  * @author  (your name)
  * @version (a version number or a date)
  */
-public class AddressTest
+public class LibrairieTest
 {
     /**
      * Default constructor for testAddLivre class CompanyTest
      */
-    
-    protected Address addressParis;
-    
-    public AddressTest()
+
+    protected Librairie lib;
+
+    public LibrairieTest()
     {
         
     }
@@ -34,7 +38,7 @@ public class AddressTest
     @BeforeEach
     public void setUp()
     {
-    	addressParis = new Address("30 rue de Paris", 75001);
+        lib = new Librairie();
     }
 
     /**
@@ -49,18 +53,15 @@ public class AddressTest
     }
     
     @Test
-    public void testSetter()
+    public void testAddLivre()
     {
-        int code = 75001;
-        String addressString = "30 rue de Paris";
-        Address address = new Address();
-        address.setAddress(addressString);
-        address.setPostcode(code);
-        assertEquals(address.getAddress(), addressString);
-        assertEquals(address.getPostcode(), code);
-        assertEquals(address.getAddress(), addressParis.getAddress());
-        assertEquals(address.getPostcode(), addressParis.getPostcode());
-
+        Livre l = new Livre("A", 10);
+        lib.addLivre(l);
+        int n = lib.getLivreList().size();
+        Livre newlyAddedLivre = lib.getLivreList().get(n-1);
+        assertEquals(1, n);
+        assertEquals(l.getName(), newlyAddedLivre.getName());
+        assertEquals(l.getPrixLivre(), newlyAddedLivre.getPrixLivre());
     }
 
     
